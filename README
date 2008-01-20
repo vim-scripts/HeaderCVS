@@ -1,0 +1,38 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=2121
+
+"
+" This plugin adds CVS Header before current cursor.
+"
+" The CVS Header will automatically reflect current file name, current date and
+" your description beside a standard CVS Header.
+"
+" (Note: This plugin is only tested on **Linux**.)
+
+For example:
+If you type ":HeaderCVS This is my file description." when editing file "Demo.sh",
+this plugin will add the following CVS Header before current cursor.
+
+########################################################################
+#  Copyright MyCompany Inc.  All Rights reserved
+########################################################################
+#
+#  File                :  Demo.sh
+#  Creator           :  AyuanX ( ayuanx#163.com )
+#  Creation Date  :  2008-01-11
+#  Description      :  This is my file description.
+#
+########################################################################
+#    $Author$
+#    $Source$
+#    $Revision$
+#    $Date$
+#    $Id$
+########################################################################
+#    $Log$
+########################################################################
+
+TIP:
+Company Name and Creator are customizable, File Name and Date are auto generated.
+
+WARNING:
+This script is written with shell comment character '#' by default, you may need some workarounds manually to comment out the added header with other corresponding comment character.
